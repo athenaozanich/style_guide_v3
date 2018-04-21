@@ -1,0 +1,38 @@
+/**************************/
+/*       NAVIGATION       */
+/**************************/
+
+.nav__item{
+	list-style: none;
+	text-align:center;
+	margin:5px;
+	background-color:black;
+	border-radius: 5px;
+	padding: 10px;
+
+	a    {
+	text-decoration: none;
+	color:$text-color-grey;
+
+	}
+
+	&:first-child {
+	background-color:$deep-cerulean;
+	
+		a{
+		color:white;
+		}
+	}
+	
+	
+}
+.nav{
+	@media (min-width: $brkpoint-md){
+		display: block;
+		margin-top: 50px;
+		.nav__item{
+		display:inline-block;
+		}
+	}
+}
+

@@ -1,0 +1,60 @@
+//==============================================================//
+//GRID SETTINGS                                                 //
+//==============================================================//
+.container{
+	display: grid;
+  	grid-gap: 20px;
+	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+[class^="grid__col"]{
+    margin:1%;
+    padding:5px;
+    border:none;
+    border-radius:3px;
+
+}
+.grid__row{
+	display:block;
+    
+    @media (min-width: $brkpoint-md){
+		display: flex;
+		flex-direction:row;
+	    justify-content: space-evenly;
+
+        .grid__col--3{
+    		flex-grow:1;
+        }
+        .grid__col--4{
+        	flex-grow:2;
+        }
+        .grid__col--5{
+            flex-grow:2;
+        }
+        .grid__col--6{
+        	flex-grow:1;
+        }
+        .grid__col--7{
+            flex-grow:5;
+        }
+        .grid__col--8{
+        	flex-grow:5;
+        }
+        .grid__col--9{
+        	flex-grow:1;
+        }
+        .grid__col--12{
+        	flex-grow:1;
+        }
+	}
+}
+
+.centered{
+    &.grid__col--7{
+       flex:0 50%;
+
+    }
+}
+
+
+
+

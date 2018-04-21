@@ -1,0 +1,17 @@
+ul{
+	padding:0;
+}
+p{
+	@media (min-width: $brkpoint-md){
+		width:60vw;
+	}
+}
+.container{
+	width:90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: $black;
+	color:$text-color-grey;
+	font-size: 1.5rem;
+	font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+}

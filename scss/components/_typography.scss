@@ -1,0 +1,27 @@
+/**************************/
+/*       TYPOGRAPHY       */
+/**************************/
+@import url($font-url--google);
+.container{
+
+}
+.link{
+	text-decoration:none;
+	text-transform: uppercase;
+	color:$scooter;
+}
+.blockquote{
+	font-size: 1.65rem;
+	font-style:italic;
+	padding-left: 15px;
+	border-left: 7px solid $scooter;
+	border-radius: 5px; 
+	color:$text-color-grey;
+}
+.headline--primary{
+	color:$deep-cerulean;
+	padding-left: 5%;
+}
+.headline--secondary{
+	margin-left: 20px;
+}

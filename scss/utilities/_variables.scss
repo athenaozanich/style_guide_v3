@@ -1,0 +1,56 @@
+// Font Stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//Layout
+$content-width-small     : 95%;
+$content-spacing-small   : 2.5%;
+
+// Breakpoints
+
+$brkpoint-md    		 : 769px;
+
+$max-width 				 : 1400px;
+
+//Grid Rules
+$gutter					 : 10px;
+
+// Descriptive Base Colors
+
+$white 					 : #fff;
+$black 					 : #0b0b0b;
+$text-color-grey  		 : #828282;
+
+$deep-cerulean  		 : #00819F;
+$east-bay       		 : #4F4885;
+$la-palma       		 : #1ca713;
+$jazzberry-jam  		 : #AC114B;
+$purple-majesty 		 : #084452;
+$scooter        		 : #39add1;
+
+//Color Themes
+$btn-themes:(
+	'default'			 : $deep-cerulean ,
+	'error'				 : $jazzberry-jam,
+	'success'			 : $la-palma,
+	'warning'			 : $purple-majesty,
+	'info'				 : $scooter
+);
+
+$col-themes:(
+	'3'			 		 : $deep-cerulean ,
+	'4'				 	 : $jazzberry-jam,
+	'5'			 		 : $la-palma,
+	'6'					 : $purple-majesty,
+	'7'			 		 : $east-bay ,
+	'8'				 	 : complement($jazzberry-jam),			 		 
+	'12'				 : $scooter
+);
+// Color Usage
+
+$color-primary   		 : $deep-cerulean;
+$color-secondary 		 : $scooter;
+$color-accent    		 : $east-bay;
+$color-shadow    		 : rgba($black, .2);

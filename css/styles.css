@@ -1,0 +1,210 @@
+/**************************/
+/*         Imports        */
+/**************************/
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+/**************************/
+/*        Functions       */
+/**************************/
+/**************************/
+/*          Loops         */
+/**************************/
+.btn--default {
+  background-color: #00819F; }
+
+.btn--error {
+  background-color: #AC114B; }
+
+.btn--success {
+  background-color: #1ca713; }
+
+.btn--warning {
+  background-color: #084452; }
+
+.btn--info {
+  background-color: #39add1; }
+
+[class*="grid__col--3"].theme__colors {
+  background-color: #00819F;
+  color: white; }
+
+[class*="grid__col--4"].theme__colors {
+  background-color: #AC114B;
+  color: white; }
+
+[class*="grid__col--5"].theme__colors {
+  background-color: #1ca713;
+  color: white; }
+
+[class*="grid__col--6"].theme__colors {
+  background-color: #084452;
+  color: white; }
+
+[class*="grid__col--7"].theme__colors {
+  background-color: #4F4885;
+  color: white; }
+
+[class*="grid__col--8"].theme__colors {
+  background-color: #11ac72;
+  color: white; }
+
+[class*="grid__col--12"].theme__colors {
+  background-color: #39add1;
+  color: white; }
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); }
+
+[class^="grid__col"] {
+  margin: 1%;
+  padding: 5px;
+  border: none;
+  border-radius: 3px; }
+
+.grid__row {
+  display: block; }
+  @media (min-width: 769px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .grid__row .grid__col--3 {
+        flex-grow: 1; }
+      .grid__row .grid__col--4 {
+        flex-grow: 2; }
+      .grid__row .grid__col--5 {
+        flex-grow: 2; }
+      .grid__row .grid__col--6 {
+        flex-grow: 1; }
+      .grid__row .grid__col--7 {
+        flex-grow: 5; }
+      .grid__row .grid__col--8 {
+        flex-grow: 5; }
+      .grid__row .grid__col--9 {
+        flex-grow: 1; }
+      .grid__row .grid__col--12 {
+        flex-grow: 1; } }
+
+.centered.grid__col--7 {
+  flex: 0 50%; }
+
+/**************************/
+/*       TYPOGRAPHY       */
+/**************************/
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #39add1; }
+
+.blockquote {
+  font-size: 1.65rem;
+  font-style: italic;
+  padding-left: 15px;
+  border-left: 7px solid #39add1;
+  border-radius: 5px;
+  color: #828282; }
+
+.headline--primary {
+  color: #00819F;
+  padding-left: 5%; }
+
+.headline--secondary {
+  margin-left: 20px; }
+
+/**************************/
+/*        BUTTONS         */
+/**************************/
+[class^="btn"] {
+  width: 95%;
+  margin: 2.5%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white; }
+  @media (min-width: 769px) {
+    [class^="btn"] {
+      width: 17%;
+      margin: auto;
+      margin-left: 2.25%; } }
+
+@media (min-width: 769px) {
+  .form .btn--default {
+    width: 95%; } }
+
+/**************************/
+/*         FORMS          */
+/**************************/
+.form {
+  min-width: 25%;
+  margin-top: 15%; }
+
+.form__label--hidden {
+  display: none; }
+
+.form__input {
+  width: 95%;
+  margin: 2.5%;
+  border: none;
+  border-bottom: 10px solid #39add1;
+  border-radius: 3px; }
+
+/**************************/
+/*       NAVIGATION       */
+/**************************/
+.nav__item {
+  list-style: none;
+  text-align: center;
+  margin: 5px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px; }
+  .nav__item a {
+    text-decoration: none;
+    color: #828282; }
+  .nav__item:first-child {
+    background-color: #00819F; }
+    .nav__item:first-child a {
+      color: white; }
+
+@media (min-width: 769px) {
+  .nav {
+    display: block;
+    margin-top: 50px; }
+    .nav .nav__item {
+      display: inline-block; } }
+
+/**************************/
+/*         IMAGES         */
+/**************************/
+.img--logo {
+  display: block;
+  margin: 10% auto; }
+
+.img--frame {
+  width: 95%;
+  padding: 2.5%;
+  border: 1px solid #828282; }
+
+.img--avatar {
+  display: block;
+  width: 250px;
+  margin: 5% auto; }
+
+ul {
+  padding: 0; }
+
+@media (min-width: 769px) {
+  p {
+    width: 60vw; } }
+
+.container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #0b0b0b;
+  color: #828282;
+  font-size: 1.5rem;
+  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif; }
+
+/*# sourceMappingURL=styles.css.map */

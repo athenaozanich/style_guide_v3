@@ -1,0 +1,24 @@
+/**************************/
+/*        BUTTONS         */
+/**************************/
+[class^="btn"]{
+	width:$content-width-small;
+	margin:2.5%;
+	padding:10px;
+	border:none;
+	border-radius:3px;
+	color:white;
+	@media (min-width: $brkpoint-md){
+		width:17%;
+		margin:auto;
+		margin-left:2.25%;
+
+	}
+}
+.form{
+	& .btn--default{
+		@media (min-width: $brkpoint-md){
+			width:$content-width-small;
+			}
+		}
+}

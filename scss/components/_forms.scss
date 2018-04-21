@@ -1,0 +1,18 @@
+/**************************/
+/*         FORMS          */
+/**************************/
+
+.form{
+	min-width: 25%;
+	margin-top: 15%;
+}
+.form__label--hidden{
+	display:none;
+}
+.form__input {
+    width: $content-width-small;
+    margin: $content-spacing-small;
+    border: none;
+    border-bottom: 10px solid $scooter;
+    border-radius: 3px;
+}

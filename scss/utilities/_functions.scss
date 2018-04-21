@@ -1,0 +1,32 @@
+/**************************/
+/*        Functions       */
+/**************************/
+@function px-to-pct($target, $context: $max-width){
+	@return ($target/$context) * 100%;
+
+}
+
+@function per-row($items){
+	$g-pct: px-to-pct($gutter) * 2;
+	$g-total: $items * $g-pct;
+	@return (100% / $items) - $g-total;
+}
+/**************************/
+/*          Loops         */
+/**************************/
+@each $theme, $color in $btn-themes{
+	.btn--#{$theme} {
+		background-color:$color;
+	}
+
+}
+
+@each $theme, $color in $col-themes{
+	[class*="grid__col--#{$theme}"]{
+		
+	    &.theme__colors{
+	    	background-color:$color ;
+	    	color:white;
+	    }
+	}
+}
