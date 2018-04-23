@@ -49,6 +49,17 @@ $col-themes:(
 	'8'				 	 : complement($jazzberry-jam),			 		 
 	'12'				 : $scooter
 );
+
+$col-sizes:(
+	'3'			 		 : 0 25%,
+	'4'				 	 : 0 31%,
+	'5'			 		 : 0 35%,
+	'6'					 : 0 50%,
+	'7'			 		 : 0 60%,
+	'8'				 	 : 0 65%,
+	'9'				 	 : 0 645px,			 		 
+	'12'				 : 0 100%
+);
 // Color Usage
 
 $color-primary   		 : $deep-cerulean;

@@ -25,9 +25,14 @@
 	[class*="grid__col--#{$theme}"]{
 		
 	    &.theme__colors{
-	    	text-align: center;
 	    	background-color:$color ;
-	    	color:white;
+	    	
 	    }
+	}
+}
+@each $theme, $size in $col-sizes{
+	[class*="grid__col--#{$theme}"]{
+    	flex:$size;
+	    
 	}
 }

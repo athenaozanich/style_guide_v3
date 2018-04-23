@@ -24,39 +24,49 @@
   background-color: #39add1; }
 
 [class*="grid__col--3"].theme__colors {
-  text-align: center;
-  background-color: #00819F;
-  color: white; }
+  background-color: #00819F; }
 
 [class*="grid__col--4"].theme__colors {
-  text-align: center;
-  background-color: #AC114B;
-  color: white; }
+  background-color: #AC114B; }
 
 [class*="grid__col--5"].theme__colors {
-  text-align: center;
-  background-color: #1ca713;
-  color: white; }
+  background-color: #1ca713; }
 
 [class*="grid__col--6"].theme__colors {
-  text-align: center;
-  background-color: #084452;
-  color: white; }
+  background-color: #084452; }
 
 [class*="grid__col--7"].theme__colors {
-  text-align: center;
-  background-color: #4F4885;
-  color: white; }
+  background-color: #4F4885; }
 
 [class*="grid__col--8"].theme__colors {
-  text-align: center;
-  background-color: #11ac72;
-  color: white; }
+  background-color: #11ac72; }
 
 [class*="grid__col--12"].theme__colors {
-  text-align: center;
-  background-color: #39add1;
-  color: white; }
+  background-color: #39add1; }
+
+[class*="grid__col--3"] {
+  flex: 0 25%; }
+
+[class*="grid__col--4"] {
+  flex: 0 31%; }
+
+[class*="grid__col--5"] {
+  flex: 0 35%; }
+
+[class*="grid__col--6"] {
+  flex: 0 50%; }
+
+[class*="grid__col--7"] {
+  flex: 0 60%; }
+
+[class*="grid__col--8"] {
+  flex: 0 65%; }
+
+[class*="grid__col--9"] {
+  flex: 0 645px; }
+
+[class*="grid__col--12"] {
+  flex: 0 100%; }
 
 ul {
   padding: 0; }
@@ -81,6 +91,9 @@ ul {
   padding: 5px;
   border: none;
   border-radius: 3px; }
+  [class^="grid__col"].theme__colors {
+    text-align: center;
+    color: white; }
 
 .grid__row {
   display: block; }
@@ -88,23 +101,7 @@ ul {
     .grid__row {
       display: flex;
       flex-direction: row;
-      justify-content: center; }
-      .grid__row .grid__col--3 {
-        flex: 0 25%; }
-      .grid__row .grid__col--4 {
-        flex: 0 31%; }
-      .grid__row .grid__col--5 {
-        flex: 0 35%; }
-      .grid__row .grid__col--6 {
-        flex: 0 50%; }
-      .grid__row .grid__col--7 {
-        flex: 0 60%; }
-      .grid__row .grid__col--8 {
-        flex: 0 65%; }
-      .grid__row .grid__col--9 {
-        flex: 0 645px; }
-      .grid__row .grid__col--12 {
-        flex: 0 100%; } }
+      justify-content: center; } }
 
 /**************************/
 /*       TYPOGRAPHY       */
@@ -115,6 +112,7 @@ ul {
   color: #39add1; }
 
 .blockquote {
+  width: 75%;
   font-size: 1.65rem;
   font-style: italic;
   padding-left: 15px;

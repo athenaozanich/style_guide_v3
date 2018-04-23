@@ -2,63 +2,28 @@
 //GRID SETTINGS                                                 //
 //==============================================================//
 .container{
-	display: grid;
-  	grid-gap: 20px;
-	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+	@include grid;
 }
 [class^="grid__col"]{
     margin:1%;
     padding:5px;
     border:none;
     border-radius:3px;
+    &.theme__colors{
+            text-align: center;
+            color:white;
+           
+            
+        }
 
 }
+
 .grid__row{
 	display:block;
     
     @include brk-pt {
-		display: flex;
-		flex-direction:row;
-	    justify-content: center;
+        @include flex;  
 
-
-        .grid__col--3{
-    		flex:0 25%;
-
-        }
-        .grid__col--4{
-        	flex:0 31%;
-
-        }
-        .grid__col--5{
-            flex:0 35%;
-
-        }
-        .grid__col--6{
-        	flex:0 50%;
-
-        }
-        .grid__col--7{
-            flex:0 60%;
-
-        }
-        .grid__col--8{
-        	flex:0 65%;
-
-        }
-        .grid__col--9{
-        	flex:0 645px;
-
-        }
-        .grid__col--12{
-        	flex:0 100%;
-            
-        }
-
-        .centered{
-
-        }
-        
 	}
 }
 
