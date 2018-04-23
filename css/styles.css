@@ -1,13 +1,13 @@
 /**************************/
 /*         Imports        */
 /**************************/
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 /**************************/
 /*        Functions       */
 /**************************/
 /**************************/
 /*          Loops         */
 /**************************/
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 .btn--default {
   background-color: #00819F; }
 
@@ -24,32 +24,52 @@
   background-color: #39add1; }
 
 [class*="grid__col--3"].theme__colors {
+  text-align: center;
   background-color: #00819F;
   color: white; }
 
 [class*="grid__col--4"].theme__colors {
+  text-align: center;
   background-color: #AC114B;
   color: white; }
 
 [class*="grid__col--5"].theme__colors {
+  text-align: center;
   background-color: #1ca713;
   color: white; }
 
 [class*="grid__col--6"].theme__colors {
+  text-align: center;
   background-color: #084452;
   color: white; }
 
 [class*="grid__col--7"].theme__colors {
+  text-align: center;
   background-color: #4F4885;
   color: white; }
 
 [class*="grid__col--8"].theme__colors {
+  text-align: center;
   background-color: #11ac72;
   color: white; }
 
 [class*="grid__col--12"].theme__colors {
+  text-align: center;
   background-color: #39add1;
   color: white; }
+
+ul {
+  padding: 0; }
+
+@media (min-width: 769px) {
+  .grid__col--8 p {
+    width: 60vw; } }
+
+.container {
+  background-color: #1b1b1b;
+  color: #828282;
+  font-size: 1.5rem;
+  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif; }
 
 .container {
   display: grid;
@@ -68,26 +88,23 @@
     .grid__row {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: center; }
       .grid__row .grid__col--3 {
-        flex-grow: 1; }
+        flex: 0 25%; }
       .grid__row .grid__col--4 {
-        flex-grow: 2; }
+        flex: 0 31%; }
       .grid__row .grid__col--5 {
-        flex-grow: 2; }
+        flex: 0 35%; }
       .grid__row .grid__col--6 {
-        flex-grow: 1; }
+        flex: 0 50%; }
       .grid__row .grid__col--7 {
-        flex-grow: 5; }
+        flex: 0 60%; }
       .grid__row .grid__col--8 {
-        flex-grow: 5; }
+        flex: 0 65%; }
       .grid__row .grid__col--9 {
-        flex-grow: 1; }
+        flex: 0 645px; }
       .grid__row .grid__col--12 {
-        flex-grow: 1; } }
-
-.centered.grid__col--7 {
-  flex: 0 50%; }
+        flex: 0 100%; } }
 
 /**************************/
 /*       TYPOGRAPHY       */
@@ -115,7 +132,7 @@
 /**************************/
 /*        BUTTONS         */
 /**************************/
-[class^="btn"] {
+.grid__col--12 [class^="btn"] {
   width: 95%;
   margin: 2.5%;
   padding: 10px;
@@ -123,14 +140,18 @@
   border-radius: 3px;
   color: white; }
   @media (min-width: 769px) {
-    [class^="btn"] {
+    .grid__col--12 [class^="btn"] {
       width: 17%;
       margin: auto;
-      margin-left: 2.25%; } }
+      margin-left: 2vw; } }
 
-@media (min-width: 769px) {
-  .form .btn--default {
-    width: 95%; } }
+.form .btn--default {
+  width: 95%;
+  margin: 2.5%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white; }
 
 /**************************/
 /*         FORMS          */
@@ -156,7 +177,7 @@
   list-style: none;
   text-align: center;
   margin: 5px;
-  background-color: black;
+  background-color: #1b1b1b;
   border-radius: 5px;
   padding: 10px; }
   .nav__item a {
@@ -167,19 +188,21 @@
     .nav__item:first-child a {
       color: white; }
 
-@media (min-width: 769px) {
-  .nav {
-    display: block;
-    margin-top: 50px; }
-    .nav .nav__item {
-      display: inline-block; } }
+.nav {
+  display: block;
+  margin: auto; }
+  @media (min-width: 769px) {
+    .nav {
+      margin-top: 50px; }
+      .nav .nav__item {
+        display: inline-block; } }
 
 /**************************/
 /*         IMAGES         */
 /**************************/
 .img--logo {
   display: block;
-  margin: 10% auto; }
+  margin: 50px auto; }
 
 .img--frame {
   width: 95%;
@@ -188,23 +211,7 @@
 
 .img--avatar {
   display: block;
-  width: 250px;
+  width: 40%;
   margin: 5% auto; }
-
-ul {
-  padding: 0; }
-
-@media (min-width: 769px) {
-  p {
-    width: 60vw; } }
-
-.container {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #0b0b0b;
-  color: #828282;
-  font-size: 1.5rem;
-  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

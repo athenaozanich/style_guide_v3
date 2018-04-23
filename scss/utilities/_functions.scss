@@ -25,6 +25,7 @@
 	[class*="grid__col--#{$theme}"]{
 		
 	    &.theme__colors{
+	    	text-align: center;
 	    	background-color:$color ;
 	    	color:white;
 	    }

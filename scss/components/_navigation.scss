@@ -6,7 +6,7 @@
 	list-style: none;
 	text-align:center;
 	margin:5px;
-	background-color:black;
+	background-color:$cod-gray;
 	border-radius: 5px;
 	padding: 10px;
 
@@ -27,11 +27,13 @@
 	
 }
 .nav{
-	@media (min-width: $brkpoint-md){
-		display: block;
+	display:block;
+	margin:auto;
+	@include brk-pt {
+		
 		margin-top: 50px;
 		.nav__item{
-		display:inline-block;
+			display:inline-block;
 		}
 	}
 }

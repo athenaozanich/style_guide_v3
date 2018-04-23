@@ -16,44 +16,53 @@
 .grid__row{
 	display:block;
     
-    @media (min-width: $brkpoint-md){
+    @include brk-pt {
 		display: flex;
 		flex-direction:row;
-	    justify-content: space-evenly;
+	    justify-content: center;
+
 
         .grid__col--3{
-    		flex-grow:1;
+    		flex:0 25%;
+
         }
         .grid__col--4{
-        	flex-grow:2;
+        	flex:0 31%;
+
         }
         .grid__col--5{
-            flex-grow:2;
+            flex:0 35%;
+
         }
         .grid__col--6{
-        	flex-grow:1;
+        	flex:0 50%;
+
         }
         .grid__col--7{
-            flex-grow:5;
+            flex:0 60%;
+
         }
         .grid__col--8{
-        	flex-grow:5;
+        	flex:0 65%;
+
         }
         .grid__col--9{
-        	flex-grow:1;
+        	flex:0 645px;
+
         }
         .grid__col--12{
-        	flex-grow:1;
+        	flex:0 100%;
+            
         }
+
+        .centered{
+
+        }
+        
 	}
 }
 
-.centered{
-    &.grid__col--7{
-       flex:0 50%;
 
-    }
-}
 
 
 

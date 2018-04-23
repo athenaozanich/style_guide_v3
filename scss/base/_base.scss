@@ -1,16 +1,13 @@
 ul{
 	padding:0;
 }
-p{
-	@media (min-width: $brkpoint-md){
+.grid__col--8 p{
+	@include brk-pt {
 		width:60vw;
 	}
 }
 .container{
-	width:90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	background-color: $black;
+	background-color: $cod-gray;
 	color:$text-color-grey;
 	font-size: 1.5rem;
 	font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;

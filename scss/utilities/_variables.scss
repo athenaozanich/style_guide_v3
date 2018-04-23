@@ -10,7 +10,7 @@ $content-spacing-small   : 2.5%;
 
 // Breakpoints
 
-$brkpoint-md    		 : 769px;
+$brkpoint-md    		 : "(min-width: 769px)";
 
 $max-width 				 : 1400px;
 
@@ -20,7 +20,8 @@ $gutter					 : 10px;
 // Descriptive Base Colors
 
 $white 					 : #fff;
-$black 					 : #0b0b0b;
+$cod-gray 				 : #1b1b1b;
+$black					 : #0b0b0b;
 $text-color-grey  		 : #828282;
 
 $deep-cerulean  		 : #00819F;

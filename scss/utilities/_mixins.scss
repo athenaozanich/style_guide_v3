@@ -1,0 +1,22 @@
+@mixin brk-pt{
+  
+    @media #{$brkpoint-md} { 
+    	@content; 
+    }
+}
+
+@mixin btn{
+	width:$content-width-small;
+	margin:2.5%;
+	padding:10px;
+	border:none;
+	border-radius:3px;
+	color:white;
+	@content;
+}
+
+@mixin center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
