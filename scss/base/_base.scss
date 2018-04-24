@@ -1,14 +1,4 @@
 ul{
 	padding:0;
 }
-.grid__col--8 p{
-	@include brk-pt {
-		width:60vw;
-	}
-}
-.container{
-	background-color: $cod-gray;
-	color:$text-color-grey;
-	font-size: 1.5rem;
-	font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
+

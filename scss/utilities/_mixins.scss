@@ -26,3 +26,9 @@
   	grid-gap: 20px;
 	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+@mixin mod ($modifier) { 
+  &--#{$modifier} { 
+    @content;
+  }
+}

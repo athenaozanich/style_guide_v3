@@ -3,13 +3,24 @@
 /**************************/
 @import url($font-url--google);
 .container{
-
+	background-color: $cod-gray;
+	color:$text-color-grey;
+	font-size: 1.5rem;
+	font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+.grid__col--8 p{
+	@include brk-pt {
+		width:60vw;
+	}
+}
+
 .link{
 	text-decoration:none;
 	text-transform: uppercase;
 	color:$scooter;
 }
+
 .blockquote{
 	width: 75%;
 	font-size: 1.65rem;
@@ -19,10 +30,12 @@
 	border-radius: 5px; 
 	color:$text-color-grey;
 }
+
 .headline--primary{
 	color:$deep-cerulean;
 	padding-left: 5%;
 }
+
 .headline--secondary{
 	margin-left: 20px;
 }

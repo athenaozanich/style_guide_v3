@@ -1,73 +1,6 @@
 /**************************/
 /*         Imports        */
 /**************************/
-/**************************/
-/*        Functions       */
-/**************************/
-/**************************/
-/*          Loops         */
-/**************************/
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-.btn--default {
-  background-color: #00819F; }
-
-.btn--error {
-  background-color: #AC114B; }
-
-.btn--success {
-  background-color: #1ca713; }
-
-.btn--warning {
-  background-color: #084452; }
-
-.btn--info {
-  background-color: #39add1; }
-
-[class*="grid__col--3"].theme__colors {
-  background-color: #00819F; }
-
-[class*="grid__col--4"].theme__colors {
-  background-color: #AC114B; }
-
-[class*="grid__col--5"].theme__colors {
-  background-color: #1ca713; }
-
-[class*="grid__col--6"].theme__colors {
-  background-color: #084452; }
-
-[class*="grid__col--7"].theme__colors {
-  background-color: #4F4885; }
-
-[class*="grid__col--8"].theme__colors {
-  background-color: #11ac72; }
-
-[class*="grid__col--12"].theme__colors {
-  background-color: #39add1; }
-
-[class*="grid__col--3"] {
-  flex: 0 25%; }
-
-[class*="grid__col--4"] {
-  flex: 0 31%; }
-
-[class*="grid__col--5"] {
-  flex: 0 35%; }
-
-[class*="grid__col--6"] {
-  flex: 0 50%; }
-
-[class*="grid__col--7"] {
-  flex: 0 60%; }
-
-[class*="grid__col--8"] {
-  flex: 0 65%; }
-
-[class*="grid__col--9"] {
-  flex: 0 645px; }
-
-[class*="grid__col--12"] {
-  flex: 0 100%; }
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -76,6 +9,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 html {
   line-height: 1.15;
   /* 1 */
@@ -462,15 +396,71 @@ template {
 ul {
   padding: 0; }
 
-@media (min-width: 769px) {
-  .grid__col--8 p {
-    width: 60vw; } }
+/**************************/
+/*        Functions       */
+/**************************/
+/**************************/
+/*          Loops         */
+/**************************/
+.btn--default {
+  background-color: #00819F; }
 
-.container {
-  background-color: #1b1b1b;
-  color: #828282;
-  font-size: 1.5rem;
-  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif; }
+.btn--error {
+  background-color: #AC114B; }
+
+.btn--success {
+  background-color: #1ca713; }
+
+.btn--warning {
+  background-color: #084452; }
+
+.btn--info {
+  background-color: #39add1; }
+
+[class*="grid__col--3"].theme__colors {
+  background-color: #00819F; }
+
+[class*="grid__col--4"].theme__colors {
+  background-color: #AC114B; }
+
+[class*="grid__col--5"].theme__colors {
+  background-color: #1ca713; }
+
+[class*="grid__col--6"].theme__colors {
+  background-color: #084452; }
+
+[class*="grid__col--7"].theme__colors {
+  background-color: #4F4885; }
+
+[class*="grid__col--8"].theme__colors {
+  background-color: #11ac72; }
+
+[class*="grid__col--12"].theme__colors {
+  background-color: #39add1; }
+
+[class*="grid__col--3"] {
+  flex: 0 25%; }
+
+[class*="grid__col--4"] {
+  flex: 0 31%; }
+
+[class*="grid__col--5"] {
+  flex: 0 35%; }
+
+[class*="grid__col--6"] {
+  flex: 0 50%; }
+
+[class*="grid__col--7"] {
+  flex: 0 60%; }
+
+[class*="grid__col--8"] {
+  flex: 0 65%; }
+
+[class*="grid__col--9"] {
+  flex: 0 645px; }
+
+[class*="grid__col--12"] {
+  flex: 0 100%; }
 
 .container {
   display: grid;
@@ -497,6 +487,16 @@ ul {
 /**************************/
 /*       TYPOGRAPHY       */
 /**************************/
+.container {
+  background-color: #1b1b1b;
+  color: #828282;
+  font-size: 1.5rem;
+  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif; }
+
+@media (min-width: 769px) {
+  .grid__col--8 p {
+    width: 60vw; } }
+
 .link {
   text-decoration: none;
   text-transform: uppercase;
