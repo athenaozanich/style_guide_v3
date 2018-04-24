@@ -592,12 +592,10 @@ ul {
 .img--logo {
   display: block;
   margin: 50px auto; }
-
 .img--frame {
   width: 95%;
   padding: 2.5%;
   border: 1px solid #828282; }
-
 .img--avatar {
   display: block;
   width: 40%;

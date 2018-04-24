@@ -1,17 +1,22 @@
 /**************************/
 /*         IMAGES         */
 /**************************/
-.img--logo{
-	display:block;
-	margin:50px auto;
-}
-.img--frame {
-    width: 95%;
-    padding: 2.5%;
-    border: 1px solid $text-color-grey;
-}
-.img--avatar{
-	display:block;
-	width:40%;
-	margin:5% auto;
+
+.img{
+
+	&--logo{
+		display:block;
+		margin:50px auto;
+	}
+	&--frame{
+	    width: 95%;
+	    padding: 2.5%;
+	    border: 1px solid $text-color-grey;
+	}
+	&--avatar{
+		display:block;
+		width:40%;
+		margin:5% auto;
+	}
+
 }
