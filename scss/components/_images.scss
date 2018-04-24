@@ -3,17 +3,15 @@
 /**************************/
 .img{
 	
-    @include mod(logo){
-    	display:block;
+    @include mod(logo, block){
         margin:50px auto;
     }
-    @include mod(frame){
+    @include mod(frame, block){
         width: 95%;
 	    padding: 2.5%;
 	    border: 1px solid $text-color-grey;
     }
-    @include mod(avatar){
-    	display:block;
+    @include mod(avatar, block){
         width:40%;
         margin:5% auto;
     }
