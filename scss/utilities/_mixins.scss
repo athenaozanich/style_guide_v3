@@ -27,7 +27,7 @@
 	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-@mixin mod ($modifier) { 
+@mixin mod($modifier) { 
   &--#{$modifier} { 
     @content;
   }
