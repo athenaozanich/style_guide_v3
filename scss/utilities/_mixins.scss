@@ -1,7 +1,6 @@
 @mixin brk-pt{
-  
-    @media #{$brkpoint-md} { 
-    	@content; 
+    @media #{$brkpoint-md} {
+    	@content;
     }
 }
 
@@ -18,7 +17,7 @@
 @mixin flex{
 	display: flex;
 	flex-direction:row;
-    justify-content: center;
+  justify-content: center;
 }
 
 @mixin grid{
@@ -27,15 +26,15 @@
 	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-@mixin element($element) { 
+@mixin element($element) {
   &__#{$element} {
   	@content;
   }
 }
 
-@mixin mod($mod, $display: null) { 
+@mixin mod($mod, $display: null) {
   &--#{$mod} {
-  	display:$display; 
+  	display:$display;
     @content;
   }
 }

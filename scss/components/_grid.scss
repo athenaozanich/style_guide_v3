@@ -12,23 +12,15 @@
     &.theme__colors{
             text-align: center;
             color:white;
-           
-            
         }
 
 }
 
 .grid__row{
 	display:block;
-    
+
     @include brk-pt {
-        @include flex;  
+        @include flex;
 
 	}
 }
-
-
-
-
-
-
